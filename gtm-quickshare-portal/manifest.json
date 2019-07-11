@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "MacSync Launcher",
+  "description": "A portal to GTM MacSync and project source.",
+  "version": "1.0",
+  "icons": {
+    "128": "logoFave.png"
+  },
+  "browser_action": {
+    "default_icon": "logoFave.png",
+    "default_popup": "launch.html"
+  }
+}

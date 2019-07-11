@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>GTM QuickShare Portal</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet" type="text/css">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css" rel="stylesheet">
+    <style>
+    html,
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 274px;
+      padding: 0;
+      width: 354px;
+      text-align: center;
+      border-left: solid #20c997;
+      border-right: solid #20c997;
+      overflow: hidden;
+    }
+	/* Bounce keyframe from animate.css by Daniel Eden */
+	.bounce {
+	  animation: bounce 1s;
+	  -webkit-animation: bounce 1s;
+	}
+  
+	@keyframes bounce {
+	  from,
+	  20%,
+	  40%,
+	  60%,
+	  80%,
+	  to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	  }
+
+	  0% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	  }
+
+	  20% {
+		-webkit-transform: scale3d(1.1, 1.1, 1.1);
+		transform: scale3d(1.1, 1.1, 1.1);
+	  }
+
+	  40% {
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+		transform: scale3d(0.9, 0.9, 0.9);
+	  }
+
+	  60% {
+		opacity: 1;
+		-webkit-transform: scale3d(1.03, 1.03, 1.03);
+		transform: scale3d(1.03, 1.03, 1.03);
+	  }
+
+	  80% {
+		-webkit-transform: scale3d(0.97, 0.97, 0.97);
+		transform: scale3d(0.97, 0.97, 0.97);
+	  }
+
+	  to {
+		opacity: 1;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	  }
+	}
+
+    h1 {
+      font-family: 'Menlo', monospace;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+	  }
+
+    a {
+      color: #ffff;
+    }
+
+    .modal-hr {
+      align-items: center;
+      border-bottom: 0.5px solid #dadada;
+    }
+
+    .modal-container {
+      border-top: 0.5px solid #dadada;
+      height: 15px;
+      width: 100%;
+    }
+
+    .headPadTitle {
+      padding: 16px;
+    }
+
+    .flex-container {
+	  position: relative;
+	  top: 2px;
+    display: flex;
+    
+    }
+
+    .flex {
+      margin-left: 50px;
+      margin-top: 10px;
+    }
+
+    .flex .fa {
+      font-size: 50px;
+      color: #2f5876;
+    }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* Custom Tooltip */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+  </style>
+  </head>
+
+  <body>
+    <div style="background-color: #20c997; color: #ffffff; padding: 10px;"
+      class="header-info">
+      QuickShare Portal V1.0.0
+    </div>
+    <div class="modal-hr">
+      <h1 class="headPadTitle">
+        <span style="color: #007bff;">GTM QuickShare</span> 
+        <span style="color:#28a745;">Portal</span>
+      </h1>
+    </div>
+    <div class="modal-title">
+      <p style="font-weight: bold; color: #007bff;">A quick access extension for GTM QuickShare.</p>
+    </div>
+    <div class="ball modal-container">
+      <div class="bounce flex-container">
+        <div class="flex tooltip">
+          <a id="launchMacSync"
+            href="https://iamshawn98.github.io/gtm-quickshare/"
+            target="_blank">
+            <i style="color: #17a2b8;" class="fa fa-share-alt" aria-hidden="true"></i>
+          </a>
+          <span class="tooltiptext">Launch GTM QuickShare!</span>
+        </div>
+        <div class="flex tooltip">
+          <a
+            href="https://github.com/IAmShawn98/gtm-quickshare/archive/master.zip"
+            target="_blank">
+            <i style="color: #28a745; font-weight: bold;" class="fa fa-code"></i>
+          </a>
+          <span class="tooltiptext">Download Source Code!</span>
+        </div>
+        <div class="flex tooltip">
+          <a
+            href="https://github.com/IAmShawn98/gtm-quickshare"
+            target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <span class="tooltiptext">View On GitHub!</span>
+        </div>
+      </div>
+      <br>
+      <div class="footer"></div>
+      <p style="background-color: #20c997; text-align: center; padding: 16px 0 14px;
+        margin-top: 0; color: #ffffff; font-weight: bold;">&copy; Global Tax
+        Management | A Thing By <a href="https://github.com/IAmShawn98"><u>Shawn</u></a></p>
+    </div>
+
+  </body>
+
+</html>
